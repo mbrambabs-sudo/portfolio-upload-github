@@ -1,0 +1,3606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Brambabs Mahlaule | Quantity Surveyor</title>
+
+<meta name="description"
+content="Professional portfolio of Brambabs Mahlaule, Quantity Surveyor and Construction Management Professional.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+<style>
+
+/* =====================================================
+   GLOBAL
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+
+    --primary: #0f766e;
+    --primary-dark: #064e3b;
+    --gold: #f59e0b;
+    --dark: #07111f;
+    --dark2: #0d1b2a;
+    --light: #f8fafc;
+    --white: #ffffff;
+    --text: #334155;
+    --muted: #64748b;
+    --border: #e2e8f0;
+
+    --shadow:
+        0 20px 50px rgba(15,23,42,.10);
+}
+
+body {
+
+    font-family: 'Inter', sans-serif;
+
+    background: var(--light);
+
+    color: var(--text);
+
+    line-height: 1.7;
+
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+
+    font-family: 'Poppins', sans-serif;
+
+    color: var(--dark);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.container {
+
+    width: min(1180px,92%);
+
+    margin: auto;
+}
+
+section {
+
+    padding: 100px 0;
+
+    scroll-margin-top: 80px;
+}
+
+
+/* =====================================================
+   LOADER
+===================================================== */
+
+#loader {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: var(--dark);
+
+    z-index: 9999;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    transition: .6s;
+}
+
+.loader-content {
+
+    text-align: center;
+
+    color: white;
+}
+
+.loader-spinner {
+
+    width: 65px;
+
+    height: 65px;
+
+    border: 4px solid rgba(255,255,255,.2);
+
+    border-top-color: var(--gold);
+
+    border-radius: 50%;
+
+    animation: spin 1s linear infinite;
+
+    margin: auto auto 20px;
+}
+
+@keyframes spin {
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+.navbar {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+    background:
+        rgba(7,17,31,.94);
+
+    backdrop-filter: blur(15px);
+
+    border-bottom:
+        1px solid rgba(255,255,255,.08);
+}
+
+.nav-container {
+
+    width: min(1180px,92%);
+
+    margin: auto;
+
+    min-height: 75px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.logo {
+
+    color: white;
+
+    font-family: Poppins;
+
+    font-size: 23px;
+
+    font-weight: 800;
+}
+
+.logo span {
+    color: var(--gold);
+}
+
+.nav-links {
+
+    display: flex;
+
+    gap: 24px;
+
+    list-style: none;
+}
+
+.nav-links a {
+
+    color: #e2e8f0;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    color: var(--gold);
+}
+
+.menu-btn {
+
+    display: none;
+
+    color: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    position: relative;
+
+    background:
+
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(15,118,110,.35),
+            transparent 35%
+        ),
+
+        linear-gradient(
+            135deg,
+            var(--dark),
+            var(--dark2)
+        );
+
+    color: white;
+
+    overflow: hidden;
+}
+
+.hero-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.1fr .9fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.hero-small {
+
+    color: var(--gold);
+
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+
+    color: white;
+
+    font-size:
+        clamp(45px,6vw,72px);
+
+    line-height: 1.05;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: var(--gold);
+}
+
+.hero h2 {
+
+    color: #cbd5e1;
+
+    font-size: 22px;
+
+    margin-bottom: 20px;
+
+    font-weight: 500;
+}
+
+.hero p {
+
+    color: #cbd5e1;
+
+    max-width: 680px;
+
+    margin-bottom: 30px;
+
+    font-size: 17px;
+}
+
+.hero-buttons {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+}
+
+.btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    padding: 13px 22px;
+
+    border-radius: 8px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+    border: none;
+}
+
+.btn-primary {
+
+    background: var(--gold);
+
+    color: #111827;
+}
+
+.btn-primary:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 15px 30px
+        rgba(245,158,11,.3);
+}
+
+.btn-outline {
+
+    border:
+        1px solid rgba(255,255,255,.25);
+
+    color: white;
+
+    background: transparent;
+}
+
+.btn-outline:hover {
+
+    background: white;
+
+    color: var(--dark);
+}
+
+
+/* =====================================================
+   PROFILE PICTURE
+   YOUR PHOTO GOES HERE:
+   images/Profile.jpg
+===================================================== */
+
+.profile-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.profile-card {
+
+    width: 350px;
+
+    height: 430px;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    border:
+        4px solid rgba(245,158,11,.45);
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,.4);
+
+    transform: rotate(2deg);
+
+    transition: .5s;
+
+    background: #1e293b;
+}
+
+.profile-card:hover {
+
+    transform:
+        rotate(0deg)
+        translateY(-10px);
+}
+
+
+/*
+=========================================================
+THIS IS THE PROFILE IMAGE.
+
+Make sure your photo is:
+
+images/Profile.jpg
+
+=========================================================
+*/
+
+.profile-card img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+}
+
+
+/* =====================================================
+   SECTION HEADINGS
+===================================================== */
+
+.section-heading {
+
+    text-align: center;
+
+    margin-bottom: 55px;
+}
+
+.section-heading .tag {
+
+    display: inline-block;
+
+    padding: 6px 13px;
+
+    border-radius: 30px;
+
+    background:
+        rgba(15,118,110,.08);
+
+    color: var(--primary);
+
+    text-transform: uppercase;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+}
+
+.section-heading h2 {
+
+    font-size: 38px;
+
+    margin-bottom: 12px;
+}
+
+.section-heading p {
+
+    max-width: 720px;
+
+    margin: auto;
+
+    color: var(--muted);
+}
+
+
+/* =====================================================
+   PROFILE SECTION
+===================================================== */
+
+.about-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        .8fr 1.2fr;
+
+    gap: 50px;
+
+    align-items: center;
+}
+
+.about-image {
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow);
+}
+
+.about-image img {
+
+    height: 470px;
+
+    object-fit: cover;
+}
+
+.about-text h3 {
+
+    font-size: 30px;
+
+    margin-bottom: 20px;
+}
+
+.about-text p {
+
+    color: var(--muted);
+
+    margin-bottom: 18px;
+}
+
+.story-box {
+
+    padding: 22px;
+
+    background: white;
+
+    border-left:
+        4px solid var(--gold);
+
+    border-radius: 10px;
+
+    box-shadow: var(--shadow);
+
+    margin-top: 25px;
+}
+
+
+/* =====================================================
+   JOURNEY
+===================================================== */
+
+.journey {
+
+    background:
+        linear-gradient(
+            135deg,
+            #ecfeff,
+            #f8fafc
+        );
+}
+
+.timeline {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    position: relative;
+}
+
+.timeline::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 0;
+
+    bottom: 0;
+
+    width: 2px;
+
+    background: #cbd5e1;
+
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+
+    width: 50%;
+
+    padding: 20px 40px;
+
+    position: relative;
+}
+
+.timeline-item:nth-child(odd) {
+
+    left: 0;
+
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+
+    left: 50%;
+}
+
+.timeline-dot {
+
+    position: absolute;
+
+    top: 30px;
+
+    width: 16px;
+
+    height: 16px;
+
+    border-radius: 50%;
+
+    background: var(--gold);
+
+    border: 4px solid white;
+
+    box-shadow:
+        0 0 0 3px var(--primary);
+}
+
+.timeline-item:nth-child(odd)
+.timeline-dot {
+
+    right: -8px;
+}
+
+.timeline-item:nth-child(even)
+.timeline-dot {
+
+    left: -8px;
+}
+
+.timeline-content {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: var(--shadow);
+}
+
+.timeline-date {
+
+    color: var(--gold);
+
+    font-size: 13px;
+
+    font-weight: 800;
+}
+
+.timeline-content h3 {
+
+    color: var(--primary);
+
+    margin-bottom: 8px;
+}
+
+
+/* =====================================================
+   EXPERIENCE
+===================================================== */
+
+.experience-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 30px;
+}
+
+.experience-card {
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 18px;
+
+    box-shadow: var(--shadow);
+
+    border-top:
+        4px solid var(--primary);
+}
+
+.company {
+
+    color: var(--primary);
+
+    font-weight: 800;
+}
+
+.experience-card h3 {
+
+    margin-bottom: 5px;
+}
+
+.experience-card ul {
+
+    margin-top: 20px;
+
+    padding-left: 20px;
+}
+
+.experience-card li {
+
+    margin-bottom: 8px;
+
+    color: var(--muted);
+}
+
+
+/* =====================================================
+   SKILLS
+===================================================== */
+
+.skills {
+
+    background: #f1f5f9;
+}
+
+.skills-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 20px;
+}
+
+.skill-card {
+
+    background: white;
+
+    padding: 28px;
+
+    border-radius: 16px;
+
+    border:
+        1px solid var(--border);
+
+    transition: .35s;
+}
+
+.skill-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: var(--shadow);
+
+    border-color: var(--primary);
+}
+
+.skill-icon {
+
+    width: 50px;
+
+    height: 50px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 12px;
+
+    background:
+        rgba(15,118,110,.1);
+
+    color: var(--primary);
+
+    font-size: 22px;
+
+    margin-bottom: 18px;
+}
+
+.skill-card h3 {
+
+    font-size: 18px;
+
+    margin-bottom: 8px;
+}
+
+.skill-card p {
+
+    color: var(--muted);
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   SOFTWARE
+===================================================== */
+
+.software {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-top: 30px;
+}
+
+.software span {
+
+    background: white;
+
+    padding: 11px 18px;
+
+    border-radius: 30px;
+
+    border:
+        1px solid var(--border);
+
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.software span:hover {
+
+    background: var(--primary);
+
+    color: white;
+
+    transform: translateY(-3px);
+}
+
+
+/* =====================================================
+   PROJECTS
+===================================================== */
+
+.projects {
+
+    background: var(--dark);
+
+    color: white;
+}
+
+.projects .section-heading h2 {
+    color: white;
+}
+
+.projects .section-heading p {
+    color: #94a3b8;
+}
+
+.project-filter {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-bottom: 35px;
+}
+
+.filter-btn {
+
+    padding: 10px 18px;
+
+    border-radius: 30px;
+
+    border:
+        1px solid rgba(255,255,255,.15);
+
+    background: transparent;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+
+    background: var(--gold);
+
+    color: #111827;
+}
+
+.projects-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 25px;
+}
+
+.project-card {
+
+    background: #101e2d;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    border:
+        1px solid rgba(255,255,255,.08);
+
+    transition: .4s;
+}
+
+.project-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 25px 50px rgba(0,0,0,.35);
+}
+
+.project-image {
+
+    height: 240px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+}
+
+.project-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .5s;
+}
+
+.project-card:hover
+.project-image img {
+
+    transform: scale(1.08);
+}
+
+.project-info {
+
+    padding: 24px;
+}
+
+.project-info h3 {
+
+    color: white;
+
+    margin: 10px 0;
+}
+
+.project-info p {
+
+    color: #94a3b8;
+
+    font-size: 14px;
+}
+
+.project-tag {
+
+    color: var(--gold);
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+/* =====================================================
+   DRAWINGS
+===================================================== */
+
+.drawings {
+
+    background: white;
+}
+
+.drawings-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 25px;
+}
+
+.drawing-card {
+
+    background: white;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow);
+
+    transition: .35s;
+}
+
+.drawing-card:hover {
+
+    transform: translateY(-8px);
+}
+
+.drawing-image {
+
+    height: 300px;
+
+    background: #e2e8f0;
+
+    overflow: hidden;
+
+    cursor: pointer;
+}
+
+.drawing-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+
+    transition: .4s;
+}
+
+.drawing-card:hover
+.drawing-image img {
+
+    transform: scale(1.04);
+}
+
+.drawing-info {
+
+    padding: 22px;
+}
+
+.drawing-info h3 {
+    margin-bottom: 7px;
+}
+
+.drawing-info p {
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+    margin-bottom: 18px;
+}
+
+
+/* =====================================================
+   DOCUMENTS
+===================================================== */
+
+.documents {
+
+    background: #f1f5f9;
+}
+
+.document-card {
+
+    background: white;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 18px;
+
+    box-shadow: var(--shadow);
+
+    transition: .35s;
+}
+
+.document-card:hover {
+    transform: translateY(-7px);
+}
+
+.document-icon {
+
+    font-size: 45px;
+
+    color: var(--primary);
+
+    margin-bottom: 15px;
+}
+
+.document-card h3 {
+    margin-bottom: 10px;
+}
+
+.document-card p {
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =====================================================
+   CERTIFICATES
+===================================================== */
+
+.certificates {
+    background: white;
+}
+
+.certificate-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 20px;
+}
+
+.certificate-card {
+
+    background: #f8fafc;
+
+    padding: 25px;
+
+    text-align: center;
+
+    border-radius: 16px;
+
+    border:
+        1px solid var(--border);
+
+    transition: .35s;
+}
+
+.certificate-card:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow: var(--shadow);
+}
+
+.certificate-card i {
+
+    font-size: 40px;
+
+    color: var(--gold);
+
+    margin-bottom: 15px;
+}
+
+.certificate-card h3 {
+
+    font-size: 17px;
+
+    margin-bottom: 8px;
+}
+
+.certificate-card p {
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =====================================================
+   STORY
+===================================================== */
+
+.story {
+
+    background:
+        linear-gradient(
+            135deg,
+            #ecfeff,
+            #f8fafc
+        );
+}
+
+.story-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 25px;
+}
+
+.story-card {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    box-shadow: var(--shadow);
+
+    transition: .35s;
+}
+
+.story-card:hover {
+    transform: translateY(-7px);
+}
+
+.story-number {
+
+    color: var(--gold);
+
+    font-size: 40px;
+
+    font-weight: 800;
+}
+
+.story-card p {
+    color: var(--muted);
+}
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.contact {
+
+    background: var(--dark);
+
+    color: white;
+}
+
+.contact .section-heading h2 {
+    color: white;
+}
+
+.contact .section-heading p {
+    color: #94a3b8;
+}
+
+.contact-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 20px;
+}
+
+.contact-card {
+
+    background: #101e2d;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 16px;
+
+    border:
+        1px solid rgba(255,255,255,.08);
+
+    transition: .3s;
+}
+
+.contact-card:hover {
+
+    transform: translateY(-5px);
+
+    border-color: var(--gold);
+}
+
+.contact-card i {
+
+    color: var(--gold);
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+.contact-card h3 {
+
+    color: white;
+
+    margin-bottom: 8px;
+}
+
+.contact-card a {
+    color: #cbd5e1;
+}
+
+.contact-card a:hover {
+    color: var(--gold);
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+    background: #040b13;
+
+    color: #94a3b8;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+.social-links {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-bottom: 15px;
+}
+
+.social-links a {
+
+    width: 40px;
+
+    height: 40px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #10202f;
+
+    color: white;
+
+    transition: .3s;
+}
+
+.social-links a:hover {
+
+    background: var(--gold);
+
+    color: #111827;
+}
+
+
+/* =====================================================
+   ANIMATIONS
+===================================================== */
+
+.reveal {
+
+    opacity: 0;
+
+    transform: translateY(40px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+}
+
+.reveal.active {
+
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+.fade-left {
+
+    opacity: 0;
+
+    transform: translateX(-50px);
+
+    transition: .8s;
+}
+
+.fade-left.active {
+
+    opacity: 1;
+
+    transform: translateX(0);
+}
+
+.fade-right {
+
+    opacity: 0;
+
+    transform: translateX(50px);
+
+    transition: .8s;
+}
+
+.fade-right.active {
+
+    opacity: 1;
+
+    transform: translateX(0);
+}
+
+
+/* =====================================================
+   IMAGE MODAL
+===================================================== */
+
+.modal {
+
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+        rgba(0,0,0,.93);
+
+    z-index: 5000;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px;
+}
+
+.modal img {
+
+    max-width: 92%;
+
+    max-height: 90%;
+
+    object-fit: contain;
+
+    border-radius: 10px;
+}
+
+.modal-close {
+
+    position: absolute;
+
+    right: 30px;
+
+    top: 20px;
+
+    color: white;
+
+    font-size: 40px;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   BACK TO TOP
+===================================================== */
+
+#topBtn {
+
+    position: fixed;
+
+    right: 25px;
+
+    bottom: 25px;
+
+    width: 45px;
+
+    height: 45px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: var(--primary);
+
+    color: white;
+
+    display: none;
+
+    cursor: pointer;
+
+    z-index: 999;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:900px) {
+
+    .hero-grid,
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+
+        padding-top: 120px;
+
+        padding-bottom: 80px;
+    }
+
+    .profile-container {
+        order: -1;
+    }
+
+    .skills-grid,
+    .projects-grid,
+    .drawings-grid,
+    .story-grid,
+    .contact-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .certificate-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline::before {
+        left: 10px;
+    }
+
+    .timeline-item {
+
+        width: 100%;
+
+        left: 0 !important;
+
+        text-align: left !important;
+
+        padding-left: 40px;
+    }
+
+    .timeline-item .timeline-dot {
+
+        left: 2px !important;
+
+        right: auto !important;
+    }
+
+    .nav-links {
+
+        position: absolute;
+
+        top: 75px;
+
+        left: 0;
+
+        width: 100%;
+
+        background: var(--dark);
+
+        display: none;
+
+        flex-direction: column;
+
+        padding: 25px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+}
+
+
+@media(max-width:600px) {
+
+    section {
+        padding: 75px 0;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .skills-grid,
+    .projects-grid,
+    .drawings-grid,
+    .story-grid,
+    .contact-grid,
+    .certificate-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-card {
+
+        width: 280px;
+
+        height: 350px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     LOADING SCREEN
+===================================================== -->
+
+<div id="loader">
+
+    <div class="loader-content">
+
+        <div class="loader-spinner"></div>
+
+        <h3>BRAMBABS MAHLAULE</h3>
+
+        <p>Loading Portfolio...</p>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<nav class="navbar">
+
+    <div class="nav-container">
+
+        <a href="#home" class="logo">
+            BM<span>.</span>
+        </a>
+
+
+        <ul class="nav-links" id="navLinks">
+
+            <li><a href="#home">Home</a></li>
+
+            <li><a href="#about">Profile</a></li>
+
+            <li><a href="#journey">Journey</a></li>
+
+            <li><a href="#experience">Experience</a></li>
+
+            <li><a href="#skills">Skills</a></li>
+
+            <li><a href="#projects">Projects</a></li>
+
+            <li><a href="#drawings">Drawings</a></li>
+
+            <li><a href="#documents">CV</a></li>
+
+            <li><a href="#certificates">Certificates</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+
+        <div class="menu-btn" id="menuBtn">
+
+            <i class="fas fa-bars"></i>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- =====================================================
+     HOME
+===================================================== -->
+
+<section class="hero" id="home">
+
+    <div class="container hero-grid">
+
+
+        <div class="hero-content reveal">
+
+            <div class="hero-small">
+
+                Quantity Surveyor
+                • Construction Management
+
+            </div>
+
+
+            <h1>
+
+                Brambabs
+                <span>Mahlaule</span>
+
+            </h1>
+
+
+            <h2>
+
+                Quantity Surveyor |
+                Construction Management Professional
+
+            </h2>
+
+
+            <p>
+
+                A construction professional with a Bachelor
+                of Construction and practical experience in
+                quantity surveying, cost management, contract
+                administration and infrastructure projects.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a href="#projects"
+                   class="btn btn-primary">
+
+                    <i class="fas fa-building"></i>
+
+                    Explore Projects
+
+                </a>
+
+
+                <a href="documents/Brambabs-Mahlaule-cv.pdf"
+                   target="_blank"
+                   class="btn btn-outline">
+
+                    <i class="fas fa-file-pdf"></i>
+
+                    View CV
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             YOUR PROFILE PHOTO IS HERE
+             
+             FILE REQUIRED:
+             images/Profile.jpg
+        ================================================== -->
+
+        <div class="profile-container fade-right">
+
+            <div class="profile-card">
+
+                <img
+                    src="images/Profile.jpg"
+                    alt="Brambabs Mahlaule Profile Picture">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PROFILE
+===================================================== -->
+
+<section id="about">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <span class="tag">
+                My Profile
+            </span>
+
+            <h2>
+                The Professional Behind the Work
+            </h2>
+
+            <p>
+
+                Combining construction knowledge,
+                commercial awareness and practical
+                project experience.
+
+            </p>
+
+        </div>
+
+
+        <div class="about-grid">
+
+
+            <div class="about-image fade-left">
+
+                <img
+                    src="images/Profile.jpg"
+                    alt="Brambabs Mahlaule">
+
+            </div>
+
+
+            <div class="about-text fade-right">
+
+                <h3>
+
+                    Building a career around
+                    construction, cost and delivery.
+
+                </h3>
+
+
+                <p>
+
+                    I am a Quantity Surveyor and Construction
+                    Management professional with a Bachelor
+                    of Construction.
+
+                </p>
+
+
+                <p>
+
+                    My professional development has provided
+                    exposure to quantity surveying, construction
+                    management, cost control, tender documentation,
+                    site activities and project administration.
+
+                </p>
+
+
+                <p>
+
+                    My experience includes preparation and review
+                    of Bills of Quantities, quantity take-offs,
+                    valuations, payment certificates, variation
+                    orders, tender evaluation, cost control,
+                    contract administration and project close-out.
+
+                </p>
+
+
+                <div class="story-box">
+
+                    <strong>
+                        Professional Direction
+                    </strong>
+
+                    <p>
+
+                        To continue developing my technical and
+                        commercial Quantity Surveying capabilities
+                        while contributing to successful construction
+                        and infrastructure projects.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     JOURNEY
+===================================================== -->
+
+<section class="journey" id="journey">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <span class="tag">
+                My Journey
+            </span>
+
+            <h2>
+                How Far I Have Come
+            </h2>
+
+            <p>
+
+                A professional journey built through education,
+                practical experience and continuous development.
+
+            </p>
+
+        </div>
+
+
+        <div class="timeline">
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <div class="timeline-date">
+                        EDUCATION
+                    </div>
+
+                    <h3>
+                        Bachelor of Construction
+                    </h3>
+
+                    <p>
+
+                        Developed foundations in Quantity Surveying,
+                        Construction Management, construction
+                        technology, estimating and project planning.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <div class="timeline-date">
+                        PROFESSIONAL DEVELOPMENT
+                    </div>
+
+                    <h3>
+                        Entering the Industry
+                    </h3>
+
+                    <p>
+
+                        Transitioned from academic construction
+                        knowledge into practical project environments
+                        and Quantity Surveying responsibilities.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <div class="timeline-date">
+                        QUANTITY SURVEYING
+                    </div>
+
+                    <h3>
+                        Practical Project Experience
+                    </h3>
+
+                    <p>
+
+                        Developed experience in BOQ preparation,
+                        cost estimating, valuations, variations,
+                        tender documentation, site inspections
+                        and project reporting.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <div class="timeline-date">
+                        CURRENT DIRECTION
+                    </div>
+
+                    <h3>
+                        Construction & Technology
+                    </h3>
+
+                    <p>
+
+                        Continuing to develop as a Quantity Surveyor
+                        while exploring digital systems, automation
+                        and technology within construction.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     EXPERIENCE
+===================================================== -->
+
+<section id="experience">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <span class="tag">
+                Experience
+            </span>
+
+            <h2>
+                Professional Experience
+            </h2>
+
+            <p>
+
+                Practical involvement in Quantity Surveying
+                and construction project delivery.
+
+            </p>
+
+        </div>
+
+
+        <div class="experience-grid">
+
+
+            <div class="experience-card reveal">
+
+                <div class="company">
+                    QUANTITY SURVEYING
+                </div>
+
+                <h3>
+                    Construction & Infrastructure
+                </h3>
+
+                <p>
+                    Commercial and technical responsibilities
+                </p>
+
+                <ul>
+
+                    <li>BOQ preparation and review</li>
+
+                    <li>Quantity take-offs</li>
+
+                    <li>Site measurements</li>
+
+                    <li>Interim valuations</li>
+
+                    <li>Payment certificates</li>
+
+                    <li>Variation orders</li>
+
+                    <li>Cost monitoring</li>
+
+                    <li>Final accounts</li>
+
+                    <li>Tender documentation</li>
+
+                    <li>Project close-out</li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="experience-card reveal">
+
+                <div class="company">
+                    PROJECT DELIVERY
+                </div>
+
+                <h3>
+                    Site & Project Administration
+                </h3>
+
+                <p>
+                    Practical construction environment
+                </p>
+
+                <ul>
+
+                    <li>Site inspections</li>
+
+                    <li>Progress monitoring</li>
+
+                    <li>Construction reporting</li>
+
+                    <li>Contract administration</li>
+
+                    <li>Contractor coordination</li>
+
+                    <li>Quality monitoring</li>
+
+                    <li>Tender evaluation</li>
+
+                    <li>Cost reporting</li>
+
+                    <li>Snagging and close-out</li>
+
+                    <li>Stakeholder communication</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SKILLS
+===================================================== -->
+
+<section class="skills" id="skills">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <span class="tag">
+                Capabilities
+            </span>
+
+            <h2>
+                Professional Skills
+            </h2>
+
+            <p>
+                Technical, commercial and project management capabilities.
+            </p>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+
+            <div class="skill-card reveal">
+
+                <div class="skill-icon">
+                    <i class="fas fa-calculator"></i>
+                </div>
+
+                <h3>
+                    Quantity Surveying
+                </h3>
+
+                <p>
+
+                    BOQs, measurements, quantity take-offs,
+                    valuations, payment certificates and
+                    final accounts.
+
+                </p>
+
+            </div>
+
+
+            <div class="skill-card reveal">
+
+                <div class="skill-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+
+                <h3>
+                    Cost Management
+                </h3>
+
+                <p>
+
+                    Cost estimation, cost control, budget
+                    monitoring and commercial reporting.
+
+                </p>
+
+            </div>
+
+
+            <div class="skill-card reveal">
+
+                <div class="skill-icon">
+                    <i class="fas fa-file-contract"></i>
+                </div>
+
+                <h3>
+                    Contract Administration
+                </h3>
+
+                <p>
+
+                    Contract documentation, variations,
+                    claims, payment processes and
+                    commercial administration.
+
+                </p>
+
+            </div>
+
+
+            <div class="skill-card reveal">
+
+                <div class="skill-icon">
+                    <i class="fas fa-gavel"></i>
+                </div>
+
+                <h3>
+                    Tendering & Procurement
+                </h3>
+
+                <p>
+
+                    Tender documentation, tender evaluation,
+                    procurement support and commercial analysis.
+
+                </p>
+
+            </div>
+
+
+            <div class="skill-card reveal">
+
+                <div class="skill-icon">
+                    <i class="fas fa-hard-hat"></i>
+                </div>
+
+                <h3>
+                    Construction Management
+                </h3>
+
+                <p>
+
+                    Site coordination, progress monitoring,
+                    inspections and construction reporting.
+
+                </p>
+
+            </div>
+
+
+            <div class="skill-card reveal">
+
+                <div class="skill-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+
+                <h3>
+                    Stakeholder Management
+                </h3>
+
+                <p>
+
+                    Communication, teamwork, coordination
+                    and professional project meetings.
+
+                </p>
+
+            </div>
+
+
+            <div class="skill-card reveal">
+
+                <div class="skill-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+
+                <h3>
+                    Problem Solving
+                </h3>
+
+                <p>
+
+                    Analytical thinking and practical solutions
+                    to construction and commercial challenges.
+
+                </p>
+
+            </div>
+
+
+            <div class="skill-card reveal">
+
+                <div class="skill-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+
+                <h3>
+                    Time Management
+                </h3>
+
+                <p>
+
+                    Prioritisation, deadlines, programme awareness
+                    and progress monitoring.
+
+                </p>
+
+            </div>
+
+
+            <div class="skill-card reveal">
+
+                <div class="skill-icon">
+                    <i class="fas fa-shield-halved"></i>
+                </div>
+
+                <h3>
+                    Quality & Compliance
+                </h3>
+
+                <p>
+
+                    Attention to documentation, quality requirements
+                    and construction compliance.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div style="margin-top:70px;">
+
+            <div class="section-heading">
+
+                <span class="tag">
+                    Digital Toolkit
+                </span>
+
+                <h2>
+                    Software & Technology
+                </h2>
+
+            </div>
+
+
+            <div class="software">
+
+                <span>WinQS</span>
+
+                <span>CANDY / RIB CCS</span>
+
+                <span>Dimension X</span>
+
+                <span>AutoCAD</span>
+
+                <span>Microsoft Excel</span>
+
+                <span>Microsoft Word</span>
+
+                <span>Microsoft PowerPoint</span>
+
+                <span>Microsoft Project</span>
+
+                <span>AI & 4IR</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PROJECTS
+===================================================== -->
+
+<section class="projects" id="projects">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <span class="tag">
+                Site Work
+            </span>
+
+            <h2>
+                Project Experience
+            </h2>
+
+            <p>
+
+                Selected photographs showing construction
+                site activities and project work.
+
+            </p>
+
+        </div>
+
+
+        <div class="project-filter">
+
+            <button class="filter-btn active"
+                    data-filter="all">
+                All
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="site">
+                Site Work
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="office">
+                Site Office
+            </button>
+
+        </div>
+
+
+        <div class="projects-grid">
+
+
+            <div class="project-card reveal"
+                 data-category="site">
+
+                <div class="project-image">
+
+                    <img src="images/picture-1.jpg"
+                         alt="Construction site work"
+                         onclick="openImage(this.src)">
+
+                </div>
+
+                <div class="project-info">
+
+                    <span class="project-tag">
+                        SITE WORK
+                    </span>
+
+                    <h3>
+                        Construction Site
+                    </h3>
+
+                    <p>
+                        Construction activities and project site experience.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-card reveal"
+                 data-category="site">
+
+                <div class="project-image">
+
+                    <img src="images/picture-2.jpg"
+                         alt="Construction project"
+                         onclick="openImage(this.src)">
+
+                </div>
+
+                <div class="project-info">
+
+                    <span class="project-tag">
+                        PROJECT WORK
+                    </span>
+
+                    <h3>
+                        Project Activities
+                    </h3>
+
+                    <p>
+                        Practical construction project activities.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-card reveal"
+                 data-category="site">
+
+                <div class="project-image">
+
+                    <img src="images/picture-3.jpg"
+                         alt="Construction work"
+                         onclick="openImage(this.src)">
+
+                </div>
+
+                <div class="project-info">
+
+                    <span class="project-tag">
+                        SITE WORK
+                    </span>
+
+                    <h3>
+                        Construction Activities
+                    </h3>
+
+                    <p>
+                        Site work and construction environment experience.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-card reveal"
+                 data-category="office">
+
+                <div class="project-image">
+
+                    <img src="images/site-office.jpg"
+                         alt="Site office"
+                         onclick="openImage(this.src)">
+
+                </div>
+
+                <div class="project-info">
+
+                    <span class="project-tag">
+                        SITE OFFICE
+                    </span>
+
+                    <h3>
+                        Project Administration
+                    </h3>
+
+                    <p>
+                        Site office environment and project administration.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     DRAWINGS
+===================================================== -->
+
+<section class="drawings" id="drawings">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <span class="tag">
+                Technical Work
+            </span>
+
+            <h2>
+                Drawings
+            </h2>
+
+            <p>
+
+                Technical drawing references and construction documentation.
+
+            </p>
+
+        </div>
+
+
+        <div class="drawings-grid">
+
+
+            <div class="drawing-card reveal">
+
+                <div class="drawing-image">
+
+                    <img src="images/drawing-1.jpg"
+                         alt="Construction Drawing 1"
+                         onclick="openImage(this.src)">
+
+                </div>
+
+                <div class="drawing-info">
+
+                    <h3>
+                        Construction Drawing 01
+                    </h3>
+
+                    <p>
+                        Technical construction drawing.
+                    </p>
+
+                    <button
+                        class="btn btn-primary"
+                        onclick="openImage('images/drawing-1.jpg')">
+
+                        <i class="fas fa-expand"></i>
+
+                        View Drawing
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="drawing-card reveal">
+
+                <div class="drawing-image">
+
+                    <img src="images/drawing-2.jpg"
+                         alt="Construction Drawing 2"
+                         onclick="openImage(this.src)">
+
+                </div>
+
+                <div class="drawing-info">
+
+                    <h3>
+                        Construction Drawing 02
+                    </h3>
+
+                    <p>
+                        Technical construction drawing.
+                    </p>
+
+                    <button
+                        class="btn btn-primary"
+                        onclick="openImage('images/drawing-2.jpg')">
+
+                        <i class="fas fa-expand"></i>
+
+                        View Drawing
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="drawing-card reveal">
+
+                <div class="drawing-image">
+
+                    <img src="images/drawing-3.jpg"
+                         alt="Construction Drawing 3"
+                         onclick="openImage(this.src)">
+
+                </div>
+
+                <div class="drawing-info">
+
+                    <h3>
+                        Construction Drawing 03
+                    </h3>
+
+                    <p>
+                        Technical construction drawing.
+                    </p>
+
+                    <button
+                        class="btn btn-primary"
+                        onclick="openImage('images/drawing-3.jpg')">
+
+                        <i class="fas fa-expand"></i>
+
+                        View Drawing
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CV
+===================================================== -->
+
+<section class="documents" id="documents">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <span class="tag">
+                Professional Document
+            </span>
+
+            <h2>
+                My Curriculum Vitae
+            </h2>
+
+            <p>
+                View my complete professional CV.
+            </p>
+
+        </div>
+
+
+        <div style="
+            max-width:500px;
+            margin:auto;
+        ">
+
+
+            <div class="document-card reveal">
+
+                <div class="document-icon">
+
+                    <i class="fas fa-file-pdf"></i>
+
+                </div>
+
+                <h3>
+                    Brambabs Mahlaule CV
+                </h3>
+
+                <p>
+
+                    Professional curriculum vitae containing
+                    my qualifications, experience and skills.
+
+                </p>
+
+                <a
+                    href="documents/Brambabs-Mahlaule-cv.pdf"
+                    target="_blank"
+                    class="btn btn-primary">
+
+                    <i class="fas fa-file-pdf"></i>
+
+                    Open CV
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CERTIFICATES
+===================================================== -->
+
+<section class="certificates" id="certificates">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <span class="tag">
+                Qualifications
+            </span>
+
+            <h2>
+                Certificates & Training
+            </h2>
+
+            <p>
+
+                Professional qualifications and
+                software-related certifications.
+
+            </p>
+
+        </div>
+
+
+        <div class="certificate-grid">
+
+
+            <div class="certificate-card reveal">
+
+                <i class="fas fa-graduation-cap"></i>
+
+                <h3>
+                    Bachelor of Construction
+                </h3>
+
+                <p>
+                    Degree Certificate
+                </p>
+
+                <a
+                    href="documents/certificate-degree.pdf"
+                    target="_blank"
+                    class="btn btn-primary">
+
+                    View Certificate
+
+                </a>
+
+            </div>
+
+
+            <div class="certificate-card reveal">
+
+                <i class="fas fa-laptop-code"></i>
+
+                <h3>
+                    CANDY
+                </h3>
+
+                <p>
+                    Software Certificate
+                </p>
+
+                <a
+                    href="documents/certificate-candy.pdf"
+                    target="_blank"
+                    class="btn btn-primary">
+
+                    View Certificate
+
+                </a>
+
+            </div>
+
+
+            <div class="certificate-card reveal">
+
+                <i class="fas fa-ruler-combined"></i>
+
+                <h3>
+                    Dimension X
+                </h3>
+
+                <p>
+                    Software Certificate
+                </p>
+
+                <a
+                    href="documents/certificate-dimensionx.pdf"
+                    target="_blank"
+                    class="btn btn-primary">
+
+                    View Certificate
+
+                </a>
+
+            </div>
+
+
+            <div class="certificate-card reveal">
+
+                <i class="fas fa-calculator"></i>
+
+                <h3>
+                    WinQS
+                </h3>
+
+                <p>
+                    Software Certificate
+                </p>
+
+                <a
+                    href="documents/certificate-winqs.pdf"
+                    target="_blank"
+                    class="btn btn-primary">
+
+                    View Certificate
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     MY STORY
+===================================================== -->
+
+<section class="story" id="story">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <span class="tag">
+                My Story
+            </span>
+
+            <h2>
+                A Career Built Step by Step
+            </h2>
+
+            <p>
+
+                More than a CV — a summary of my
+                professional development.
+
+            </p>
+
+        </div>
+
+
+        <div class="story-grid">
+
+
+            <div class="story-card reveal">
+
+                <div class="story-number">
+                    01
+                </div>
+
+                <h3>
+                    Education
+                </h3>
+
+                <p>
+
+                    My Bachelor of Construction created the
+                    academic foundation for my Quantity Surveying
+                    and Construction Management career.
+
+                </p>
+
+            </div>
+
+
+            <div class="story-card reveal">
+
+                <div class="story-number">
+                    02
+                </div>
+
+                <h3>
+                    Entering Construction
+                </h3>
+
+                <p>
+
+                    I moved from academic theory into real
+                    construction environments where project
+                    deadlines, costs, quality and site conditions
+                    became practical responsibilities.
+
+                </p>
+
+            </div>
+
+
+            <div class="story-card reveal">
+
+                <div class="story-number">
+                    03
+                </div>
+
+                <h3>
+                    Quantity Surveying
+                </h3>
+
+                <p>
+
+                    BOQs, valuations, cost estimates, variations,
+                    payment certificates, final accounts and
+                    contract administration became important
+                    parts of my professional development.
+
+                </p>
+
+            </div>
+
+
+            <div class="story-card reveal">
+
+                <div class="story-number">
+                    04
+                </div>
+
+                <h3>
+                    Site Experience
+                </h3>
+
+                <p>
+
+                    Working around construction sites strengthened
+                    my understanding of how drawings, quantities,
+                    costs and actual construction activities connect.
+
+                </p>
+
+            </div>
+
+
+            <div class="story-card reveal">
+
+                <div class="story-number">
+                    05
+                </div>
+
+                <h3>
+                    Technology
+                </h3>
+
+                <p>
+
+                    I am interested in using digital tools,
+                    automation and Artificial Intelligence to
+                    improve construction and Quantity Surveying workflows.
+
+                </p>
+
+            </div>
+
+
+            <div class="story-card reveal">
+
+                <div class="story-number">
+                    06
+                </div>
+
+                <h3>
+                    The Future
+                </h3>
+
+                <p>
+
+                    My goal is to continue developing as a
+                    Quantity Surveying professional and contribute
+                    meaningfully to construction and infrastructure delivery.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section class="contact" id="contact">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <span class="tag">
+                Contact
+            </span>
+
+            <h2>
+                Let's Connect
+            </h2>
+
+            <p>
+
+                Professional opportunities, construction
+                projects and industry connections.
+
+            </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+
+            <div class="contact-card reveal">
+
+                <i class="fas fa-envelope"></i>
+
+                <h3>
+                    Email
+                </h3>
+
+                <a href="mailto:mbrambabs@gmail.com">
+
+                    mbrambabs@gmail.com
+
+                </a>
+
+            </div>
+
+
+            <div class="contact-card reveal">
+
+                <i class="fas fa-phone"></i>
+
+                <h3>
+                    Phone
+                </h3>
+
+                <a href="tel:+27716460323">
+
+                    071 646 0323
+
+                </a>
+
+            </div>
+
+
+            <div class="contact-card reveal">
+
+                <i class="fab fa-linkedin"></i>
+
+                <h3>
+                    LinkedIn
+                </h3>
+
+                <a
+                    href="https://www.linkedin.com/in/brambabs-mahlaule-3488062a5/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    View LinkedIn Profile
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="social-links">
+
+        <a href="mailto:mbrambabs@gmail.com">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="tel:+27716460323">
+            <i class="fas fa-phone"></i>
+        </a>
+
+        <a
+            href="https://www.linkedin.com/in/brambabs-mahlaule-3488062a5/"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            <i class="fab fa-linkedin-in"></i>
+
+        </a>
+
+    </div>
+
+
+    <p>
+
+        © <span id="year"></span>
+        Brambabs Mahlaule.
+        All Rights Reserved.
+
+    </p>
+
+    <p>
+
+        Quantity Surveyor |
+        Construction Management Professional
+
+    </p>
+
+</footer>
+
+
+<!-- =====================================================
+     BACK TO TOP
+===================================================== -->
+
+<button id="topBtn">
+
+    <i class="fas fa-arrow-up"></i>
+
+</button>
+
+
+<!-- =====================================================
+     IMAGE MODAL
+===================================================== -->
+
+<div class="modal" id="imageModal">
+
+    <span class="modal-close"
+          onclick="closeImage()">
+
+        &times;
+
+    </span>
+
+    <img id="modalImage"
+         src=""
+         alt="Portfolio image">
+
+</div>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+
+/* =====================================================
+   LOADER
+===================================================== */
+
+window.addEventListener("load", function() {
+
+    const loader =
+        document.getElementById("loader");
+
+    setTimeout(function() {
+
+        loader.style.opacity = "0";
+
+        setTimeout(function() {
+
+            loader.style.display = "none";
+
+        }, 600);
+
+    }, 700);
+
+});
+
+
+/* =====================================================
+   MOBILE MENU
+===================================================== */
+
+const menuBtn =
+    document.getElementById("menuBtn");
+
+const navLinks =
+    document.getElementById("navLinks");
+
+
+menuBtn.addEventListener("click", function() {
+
+    navLinks.classList.toggle("show");
+
+});
+
+
+document
+.querySelectorAll(".nav-links a")
+.forEach(function(link) {
+
+    link.addEventListener("click", function() {
+
+        navLinks.classList.remove("show");
+
+    });
+
+});
+
+
+/* =====================================================
+   SCROLL ANIMATIONS
+===================================================== */
+
+const observer =
+    new IntersectionObserver(
+
+        function(entries) {
+
+            entries.forEach(function(entry) {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add("active");
+
+                }
+
+            });
+
+        },
+
+        {
+            threshold: .12
+        }
+
+    );
+
+
+document
+.querySelectorAll(".reveal, .fade-left, .fade-right")
+.forEach(function(element) {
+
+    observer.observe(element);
+
+});
+
+
+/* =====================================================
+   PROJECT FILTER
+===================================================== */
+
+const filterButtons =
+    document.querySelectorAll(".filter-btn");
+
+const projectCards =
+    document.querySelectorAll(".project-card");
+
+
+filterButtons.forEach(function(button) {
+
+    button.addEventListener("click", function() {
+
+        filterButtons.forEach(function(btn) {
+
+            btn.classList.remove("active");
+
+        });
+
+        button.classList.add("active");
+
+        const filter =
+            button.dataset.filter;
+
+
+        projectCards.forEach(function(card) {
+
+            const category =
+                card.dataset.category;
+
+
+            if (
+                filter === "all" ||
+                category === filter
+            ) {
+
+                card.style.display = "block";
+
+            }
+
+            else {
+
+                card.style.display = "none";
+
+            }
+
+        });
+
+    });
+
+});
+
+
+/* =====================================================
+   IMAGE VIEWER
+===================================================== */
+
+function openImage(source) {
+
+    const modal =
+        document.getElementById("imageModal");
+
+    const image =
+        document.getElementById("modalImage");
+
+    image.src = source;
+
+    modal.style.display = "flex";
+
+}
+
+
+function closeImage() {
+
+    document
+        .getElementById("imageModal")
+        .style.display = "none";
+
+}
+
+
+document
+.getElementById("imageModal")
+.addEventListener("click", function(event) {
+
+    if (event.target === this) {
+
+        closeImage();
+
+    }
+
+});
+
+
+/* =====================================================
+   BACK TO TOP
+===================================================== */
+
+const topBtn =
+    document.getElementById("topBtn");
+
+
+window.addEventListener("scroll", function() {
+
+    if (window.scrollY > 500) {
+
+        topBtn.style.display = "block";
+
+    }
+
+    else {
+
+        topBtn.style.display = "none";
+
+    }
+
+});
+
+
+topBtn.addEventListener("click", function() {
+
+    window.scrollTo({
+
+        top: 0,
+
+        behavior: "smooth"
+
+    });
+
+});
+
+
+/* =====================================================
+   CURRENT YEAR
+===================================================== */
+
+document
+.getElementById("year")
+.textContent =
+new Date().getFullYear();
+
+
+</script>
+
+
+</body>
+
+</html>
